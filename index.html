@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Add User Details using javaScript
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      </div>
+    </div>
+    <table>
+      <td>
+        <table class="list" id="employeeList">
+          <thead>
+            <tr>
+              <th>Number</th>
+              <th>Name</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </td>
+    </table>
+    <button id="myBtn">Add User Details</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <table>
+          <tr>
+            <td>
+              <form
+                class="form"
+                onsubmit="event.preventDefault();onFormSubmit();"
+                autocomplete="off"
+              >
+                <div>
+                  <label>Number</label
+                  ><label
+                    class="validation-error hide"
+                    id="numberValidationError"
+                    >This field is required.</label
+                  >
+                  <input type="number" name="number" id="number" />
+                </div>
+                <div>
+                  <label>Name</label>
+                  <input type="text" name="name" id="name" />
+                </div>
+                <div>
+                  <label>Email</label>
+                  <input type="text" name="email" id="email" />
+                </div>
+                <div>
+                  <input type="submit" value="Submit" />
+                </div>
+              </form>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
